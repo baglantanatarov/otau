@@ -74,7 +74,7 @@ main {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 500px;
+    height: auto;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
@@ -159,7 +159,6 @@ footer {
         align-self: center;
         text-align: center;
         width: auto;
-        padding-bottom: 5px;
         text-align: center;
         padding-bottom: 85px;
     }
@@ -184,33 +183,30 @@ footer {
         text-decoration: none;
     }
 }
-@media all and (max-width: 369px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 75px;
-        margin: 0 30px 30px 30px;
-        flex-wrap: wrap;
-    }
-    .panel{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: 100px;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 420px;;
-    }
-        .text{
+
+@media all and (max-width: 372px) {
+    .text{
         color: white;
-        font-size: 30px;
+        font-size: 25px;
         align-self: center;
         text-align: center;
         width: auto;
-        padding-bottom: 5px;
         text-align: center;
-        padding-bottom: 15px;
+        padding-bottom: 30px;
     }
-
+    .menu{  
+        color: white;
+        display: flex;
+        width: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu img{
+        width: 50px;
+    }
+    .menu-1,.menu-2,.menu-3,.menu-4{
+        margin:0 30px;
+        text-align: center;
+        width: 90px;
+    }
 }
